@@ -1,8 +1,9 @@
 
 
-<%= "#{@player_1} vs #{@player_2}" %>
+<h1><%= "#{@player_1} vs #{@player_2}" %></h1>
 
-<%= "#{@player_1}" %>: 60HP
+<p><%= "#{@player_1}" %>: 60HP</p>
+<p><%= "#{@player_2}" %>: 60HP</p>
 
 <form action="/attack" method="get">
     <button name="attack" value="attack">Attack!</button>

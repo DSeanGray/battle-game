@@ -9,8 +9,8 @@ enable :sessions
   end
 
   get '/play' do
-    @player_1 = $player_1.player_name
-    @player_2 = $player_2.player_name
+    @player_1 = $player_1.name
+    @player_2 = $player_2.name
     erb :play
   end
 
@@ -21,9 +21,9 @@ enable :sessions
   end
 
   get '/attack' do
-    @player_1 = $player_1.player_name
-    @player_2 = $player_2.player_name
-    @attacked = params[:attack]
+    @player_1 = $player_1
+    @player_2 = $player_2
+    @player_1.attack(@player_2)
     erb :attack
   end
 
