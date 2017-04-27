@@ -7,16 +7,4 @@ describe Player do
 	      expect(sam.name).to eq 'Sam'
 	    end
 	end
-
-	describe '#damage' do
-	    xit 'returns the player name' do
-	      expect(sam.name).to eq 'Sam'
-	    end
-	end
-
-	describe '#attack' do
-	    xit 'returns the player name' do
-	      expect(sam.name).to eq 'Sam'
-	    end
-	end
 end
