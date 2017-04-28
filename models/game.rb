@@ -11,4 +11,8 @@ class Game
   def attack(player)
     player.damage
   end
+
+  def switch_player
+    @current_player == player_1 ? @current_player = @player_2 : @current_player = @player_1
+  end
 end
