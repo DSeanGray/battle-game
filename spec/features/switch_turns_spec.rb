@@ -5,19 +5,8 @@ feature 'Switch turns' do
     expect(page).to have_content "Sam's Turn"
   end
 
-  scenario 'Player can see whose turn it is after attack' do
+  scenario 'game knows whose turn it is' do
     sign_in_and_play
-    click_button('attack')
-    expect(page).to have_content "David's Turn"
+    expect($game.current_player.name).to eq 'Sam'
   end
-
-  scenario 'Player can click to attack' do
-    sign_in_and_play
-    click_button('attack')
-    click_button('attack')
-  end
-
-
-
-
 end

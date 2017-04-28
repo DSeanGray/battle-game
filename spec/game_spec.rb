@@ -19,5 +19,7 @@ describe Game do
       expect(game.player_2).to eq player_2
     end
 
-
+    it 'current player is initialised to player 1' do
+      expect(game.current_player).to eq player_1
+    end
 end
