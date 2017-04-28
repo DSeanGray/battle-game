@@ -10,4 +10,14 @@ feature 'Switch turns' do
     click_button('attack')
     expect(page).to have_content "David's Turn"
   end
+
+  scenario 'Player can click to attack' do
+    sign_in_and_play
+    click_button('attack')
+    click_button('attack')
+  end
+
+
+
+
 end
